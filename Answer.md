@@ -2,11 +2,11 @@
 > 
 >Differences
 >
-> >Flexible to handle diiferent states of subclass,Enum classs is  not flexible
+> >sealed class is  Flexible to handle different states of subclass,Enum classs is  not flexible
 >
 > Similairty
 >
->>Restricted number of Hierachies{subclass cant be built outside the class} 
+>>Restricted number of Hierachies{subclass can't be built outside the class} 
 >
 
 
@@ -22,13 +22,13 @@ enum class Sex{
      TRANSGENDER
 }
 ```
-An enum class can take a constructor() of properties, this must be instantiated in all the various values in the enum class, else we have a error. a new value ca not be created outside the class..we can iteterate through an enum class like an Arrayusing a Loop
+An enum class can take a constructor() of properties, this must be instantiated in all the various values in the enum class, else we have an error. a new value can not be created outside the class..we can iteterate through an enum class like an Array using a Loop
 
 
 
 ## Sealed class
 
-This is a special class that allows diffrent form of its Subclass and Objects within its class, Just like  Abstract class, we can freely create subclasses with different constructor parameters wiithin the parent class.
+This is a special class that allows diffrent form of its Subclass and Objects within its class, Just like  Abstract class, we can freely create subclasses with different constructor parameters within the parent class.
 
 ```kotlin
 
@@ -45,6 +45,10 @@ object Stricker : footballTeam()
 ```
 
 and like enum class, a sealed class cannot be extended outside its class.
+
+# Conclusion
+
+A sealed class takes the flexible nature of the subclass form of an Abstract class and the restricted nature of hierachies an enum class, making it a prefered class to use.
 
 
 
